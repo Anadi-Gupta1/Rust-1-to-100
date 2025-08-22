@@ -5,10 +5,23 @@ edition = "2024"
 
 [dependencies]
 
+# 🚀 AUTOMATIC BINARY DETECTION:
+# Any .rs file you put in src/bin/ will automatically become a binary
+# No need to modify this Cargo.toml file anymore!
+# 
+# How to use:
+# 1. Put your new .rs file in: src/bin/yourfile.rs
+# 2. Run with: cargo run --bin yourfile
+#
+# Legacy binaries (you can move these to src/bin/ if you want):
 [[bin]]
 name = "main3"
 path = "src/main3.rs"
 
 [[bin]]
-name = "datatypespractice"
+name = "datatypespractice" 
 path = "src/datatypespractice.rs"
+
+[[bin]]
+name = "rustconstant"
+path = "src/rustconstant.rs"

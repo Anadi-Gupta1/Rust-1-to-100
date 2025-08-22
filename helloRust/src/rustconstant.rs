@@ -1,4 +1,4 @@
-Rust Constants
+/*Rust Constants
 Constants
 Constant variables are used to store values that never change.
 
@@ -31,4 +31,11 @@ Here's a quick comparison:
 
 Feature	Constant (const)	Variable (let)
 Can change?	No	Yes, if mut is used
-Type required?	Yes	No (optional)
+Type required?	Yes	No (optional)*/
+
+fn main() {
+    const BIRTHYEAR: i32 = 1980;
+    const MINUTES_PER_HOUR: i32 = 60;
+    println!("Birth Year: {}", BIRTHYEAR);
+    println!("Minutes per Hour: {}", MINUTES_PER_HOUR);
+}
