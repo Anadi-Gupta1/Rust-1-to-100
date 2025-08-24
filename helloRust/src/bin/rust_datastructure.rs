@@ -59,6 +59,17 @@ fn main() {
   println!("Capital of Japan is {}", capitalCities["Japan"]);
 }
 
+use std::collections::HashMap;
+
+fn main() {
+   
+let mut moneyheistcities = HashMap::new();
+moneyheistcities.insert("spain","madrid");
+moneyheistcities.insert("france","paris");
+moneyheistcities.insert("italy","rome");
+println!("Capital of France is {}", moneyheistcities["france"]);
+println!("Capital of Italy is {}", moneyheistcities["italy"]);
+}
 
 
 
@@ -71,3 +82,7 @@ fn main() {
 }
 
 
+in HashMap and Vector in memory mangament the size can 
+easily be mutable beacuase of using let mut  = such that we can use it
+
+but in array and tuple we cannot use let mut because the size is fixed
