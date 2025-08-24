@@ -67,10 +67,18 @@ HashMap	Key-value lookup	Yes
 Next, let's take a closer look at each data structure in more detail.
 */
 
-fn main(){
+/*fn main(){
     let fruits =["apples", "bannas","cherries"];
     println!("last fruits, {}",fruits[2]);
 }
+*/
 
 
+use std::collections::HashMap;
+fn main() {
+    let mut capitalCities = HashMap::new();
+    capitalCities.insert("France", "Paris");
+    capitalCities.insert("Japan", "Tokyo");
 
+    println!("Capital of Japan is {}", capitalCities["Japan"]);
+}
