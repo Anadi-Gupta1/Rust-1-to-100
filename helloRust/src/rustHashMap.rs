@@ -114,3 +114,39 @@ fn main() {
         println!("Tokyo is not in the map.");
     }
 }
+
+
+Access Values
+You can use the .get() method to access a value in a HashMap by its key:
+
+use std::collections::HashMap;
+fn main() {
+    let moneyHeistCities = HashMap::new();
+    moneyHeistCities.insert("Tokyo", "Japan");
+    moneyHeistCities.insert("Berlin", "Germany");
+    moneyHeistCities.insert("Nairobi", "Kenya");
+    
+    if let Some(city) = moneyHeistCities.get("Tokyo"){
+        println!("The capital of Tokyo is {}.",city);
+        else{
+            println!("Tokyo is not in the map.");
+        }
+    }
+}
+
+Loop Through a HashMap
+use std::collections::HashMap;
+
+fn main() {
+    let mut capitalCities = HashMap::new();
+    //for (country, city) in &capitalCities {
+    capitalCities.insert("England", "London");
+    capitalCities.insert("Germany", "Berlin");
+    capitalCities.insert("Norway", "Oslo");
+
+    for (country, city) in capitalCities {
+        println!("The capital of {} is {}.", country, city);
+    }
+
+}
+
