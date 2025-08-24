@@ -45,3 +45,15 @@ fn main() {
   let user = get_user();
   println!("User: {} ({} years old)", user.0, user.1);
 }
+
+
+
+But, in Rust, we are also allowed to extract the values back into variables. This is called "unpacking":
+
+Example
+let person = ("Jenny", 45, false);
+let (name, age, active) = person;
+
+println!("Name: {}", name);
+println!("Age: {}", age);
+println!("Active: {}", active);
