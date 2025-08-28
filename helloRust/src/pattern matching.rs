@@ -182,3 +182,16 @@ You get a box (the value).
 You check different shapes of boxes (patterns).
 
 When one matches, you run the matching code.
+
+
+
+
+
+fn main() {
+    let number = 2;
+
+    match number {
+        1 | 2 => println! ("one or two"),
+        3 => println!("print the number is three" )
+    }
+}
