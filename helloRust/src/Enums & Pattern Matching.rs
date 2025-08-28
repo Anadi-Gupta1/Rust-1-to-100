@@ -40,3 +40,19 @@ fn main() {
     let dir = Direction::North;
     move_player(dir);
 }
+
+
+enum Direction {
+    North,
+    south,
+    east,
+    west
+}
+fn get_direction name(dir: Direction) -> &"static str"{
+    match dir {
+        Direction::North => "North",
+        Direction::south => "south",
+        Direction::east => "east",
+        Direction::west => "west",
+    }
+}
