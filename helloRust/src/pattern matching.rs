@@ -206,3 +206,17 @@ fn main() {
         _ => println!("The letter does not exist"),
     }
 }
+
+
+
+3. Matching Ranges
+
+fn main({
+    let number = 7
+
+    match number (
+        1..=5 => println!("the number is between one and 5"),
+        5..=10 => println!("the number is between 5 and 10"),
+        _ => println!("the number is greater than 10"),
+    }
+}
