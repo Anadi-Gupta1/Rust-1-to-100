@@ -195,3 +195,14 @@ fn main() {
         3 => println!("print the number is three" )
     }
 }
+ // | refter to the or thing either 1 or royjrt 2
+
+fn main() {
+    let day = 'A'; // Example: day is the character 'A'
+
+    match day {
+        'A'..='K' => println!("The letter is between A and K"),
+        'K'..='Z' => println!("The letter is between K and Z"),
+        _ => println!("The letter does not exist"),
+    }
+}
