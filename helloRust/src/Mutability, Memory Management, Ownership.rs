@@ -314,3 +314,94 @@ fn main() {
 
 
 Use clone() when you truly need two owned copies (costs allocations).
+✅ Memory Management
+
+Stack: for fixed-size, fast values (i32, f64, etc.)
+
+Heap: for dynamic, growable values (String, Vec, etc.)
+
+Example:
+
+fn main() {
+    let a = 10; // stored on stack
+    let b = String::from("Rust"); // stored on heap, but pointer on stack
+}
+
+
+Rust automatically frees memory when the owner goes out of scope.
+
+fn main() {
+    {
+        let s = String::from("world");
+        println!("{}", s);
+    } // s goes out of scope → memory is freed here
+}
+
+🔹 10. Referencing & Borrowing
+
+Since only one owner exists, how can you let multiple parts of your code use the same data?
+👉 That’s where references (&) and borrowing come in.
+
+✅ Immutable Borrowing
+fn main() {
+    let s = String::from("hello");
+
+    let r1 = &s; // borrow immutably
+    let r2 = &s; // borrow immutably again
+    println!("{} and {}", r1, r2);
+
+    // s can still be used
+    println!("owner: {}", s);
+}
+
+
+👉 Multiple immutable borrows are allowed at the same time.
+
+✅ Mutable Borrowing
+fn main() {
+    let mut s = String::from("hello");
+
+    let r1 = &mut s; // borrow mutably
+    r1.push_str(" world");
+
+    println!("{}", r1);
+}
+
+
+👉 Only one mutable borrow at a time is allowed.
+This prevents data races.
+
+❌ Not allowed:
+
+fn main() {
+    let mut s = String::from("hello");
+
+    let r1 = &mut s;
+    let r2 = &mut s; // ❌ ERROR: cannot borrow twice mutably
+}
+
+✅ Mix immutable & mutable references
+
+You cannot mix them at the same time:
+
+fn main() {
+    let mut s = String::from("hello");
+
+    let r1 = &s; 
+    let r2 = &s; // multiple immutable okay
+
+    // let r3 = &mut s; // ❌ ERROR: cannot borrow as mutable while immutables exist
+}
+
+✅ Real-World Example: String Length
+fn calculate_length(s: &String) -> usize {
+    s.len() // borrow s immutably
+}
+
+fn main() {
+    let s = String::from("hello");
+    let len = calculate_length(&s);
+    println!("'{}' has length {}", s, len);
+}
+
+
