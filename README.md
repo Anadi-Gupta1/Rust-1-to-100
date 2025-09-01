@@ -53,6 +53,14 @@
 │   │   ├── 🦀 rust_structs.rs     # Custom data structures
 │   │   └── 🦀 rust_enums.rs       # Enumerations and pattern matching
 │   │
+│   ├── 📁 advanced_concepts/ # Advanced Rust Features
+│   │   ├── 🦀 Enums & Pattern Matching.rs    # Advanced enums & pattern matching
+│   │   ├── 🦀 Mutability, Memory Management, Ownership.rs  # Core Rust ownership system
+│   │   ├── 🦀 Referencing & borrowing.rs     # References, borrowing & lifetimes
+│   │   ├── 🦀 struct.rs                      # Advanced struct implementations
+│   │   ├── 🦀 pattern matching.rs           # Pattern matching techniques
+│   │   └── 🦀 errorhandling.rs              # Result, Option & error handling
+│   │
 │   └── 📁 bin/               # Executable Programs
 │       ├── 🦀 example.rs         # Template for new programs
 │       ├── 🦀 rustoperator.rs    # Comprehensive operators guide
@@ -104,12 +112,17 @@ cargo run --bin rustoperator
 6. **Operators** → `cargo run --bin rustoperator`
 7. **Arrays** → `cargo run --bin rust_array`
 8. **Vectors** → `cargo run --bin rust_vector`
+9. **Tuples** → `cargo run --bin rust_tuples`
+10. **HashMaps** → `cargo run --bin rust_hashmap`
 
 ### 🌳 **Advanced Level**
-9. **HashMaps** → `cargo run --bin rust_hashmap`
-10. **Tuples** → `cargo run --bin rust_tuples`
 11. **Structs** → `cargo run --bin rust_structs`
-12. **Enums** → `cargo run --bin rust_enums`
+12. **Enums & Pattern Matching** → Learn from `src/advanced_concepts/Enums & Pattern Matching.rs`
+13. **Memory Management & Ownership** → Study `src/advanced_concepts/Mutability, Memory Management, Ownership.rs`
+14. **References & Borrowing** → Explore `src/advanced_concepts/Referencing & borrowing.rs`
+15. **Advanced Structs** → Check `src/advanced_concepts/struct.rs`
+16. **Pattern Matching Techniques** → Review `src/advanced_concepts/pattern matching.rs`
+17. **Error Handling** → Master `src/advanced_concepts/errorhandling.rs`
 
 ---
 
@@ -140,15 +153,25 @@ git add . ; git commit -m "Update: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" ; 
 | `cargo build` | Build project | `cargo build` |
 | `cargo check` | Check for errors | `cargo check` |
 
+### 📖 **Advanced Topics Quick Reference**
+| Topic | File Location | Key Concepts |
+|-------|---------------|--------------|
+| **Ownership** | `src/advanced_concepts/Mutability, Memory Management, Ownership.rs` | Move semantics, Drop trait |
+| **Borrowing** | `src/advanced_concepts/Referencing & borrowing.rs` | References, mutable/immutable borrows |
+| **Pattern Matching** | `src/advanced_concepts/Enums & Pattern Matching.rs` | Match expressions, destructuring |
+| **Error Handling** | `src/advanced_concepts/errorhandling.rs` | Result<T,E>, Option<T>, ? operator |
+| **Advanced Structs** | `src/advanced_concepts/struct.rs` | Methods, associated functions |
+
 ---
 
 ## 📂 File Organization
 
 | Directory | Purpose | File Count |
 |-----------|---------|------------|
-| 📁 **examples/** | Basic Rust programs | 3 files |
+| 📁 **examples/** | Basic Rust programs | 5 files |
 | 📁 **concepts/** | Core language concepts | 4 files |
 | 📁 **data_structures/** | Advanced data structures | 6 files |
+| 📁 **advanced_concepts/** | Advanced Rust features | 6 files |
 | 📁 **bin/** | Executable binaries | 3+ files |
 
 ---
@@ -157,21 +180,23 @@ git add . ; git commit -m "Update: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" ; 
 
 ### ✅ **Completed Topics**
 - [x] Hello World & Basic Syntax
-- [x] Variables & Mutability
+- [x] Variables & Mutability  
 - [x] Data Types (integers, floats, strings, booleans)
-- [x] Constants
+- [x] Constants & Immutability
 - [x] Operators (arithmetic, comparison, logical, assignment)
 - [x] Arrays & Vectors
-- [x] Tuples
-- [x] HashMaps
-- [x] Structs
-- [x] Enums
+- [x] Tuples & Compound Types
+- [x] HashMaps & Key-Value Storage
+- [x] Structs & Custom Data Types
+- [x] Enums & Pattern Matching (Advanced)
+- [x] Memory Management & Ownership System
+- [x] References & Borrowing
+- [x] Error Handling (Result, Option)
+- [x] Advanced Pattern Matching Techniques
 
 ### 🔄 **In Progress**
-- [ ] Functions & Control Flow
-- [ ] Ownership & Borrowing
-- [ ] Lifetimes
-- [ ] Error Handling
+- [ ] Functions & Control Flow (Advanced)
+- [ ] Lifetimes (Deep Dive)
 - [ ] Traits & Generics
 
 ### 📋 **Coming Soon**
@@ -212,7 +237,7 @@ Want to contribute to this learning journey? Here's how:
 ![GitHub forks](https://img.shields.io/github/forks/Anadi-Gupta1/Rust-1-to-100?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/Anadi-Gupta1/Rust-1-to-100?style=social)
 
-**📈 Learning Progress:** 15+ Rust concepts covered and growing!
+**📈 Learning Progress:** 20+ Rust concepts covered and growing!
 
 </div>
 

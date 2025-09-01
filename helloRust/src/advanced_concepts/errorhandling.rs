@@ -55,3 +55,15 @@ fn identity<T>(arg: T) -> T {
 
 In general, generics provide a way to write code that is more abstract and reusable, while still maintaining type safety. They are a powerful feature in both TypeScript and Rust, enabling developers to create more flexible and maintainable code.
 
+Genrics means that you dont know exact what shouldthe first value and what should be the second value but you know that they should be of same type
+    then generics comes into the game 
+
+    T can be any type like string number boolean etc but then x and y of same file
+
+
+
+enum<T , T> {
+    x: T,
+    y: T
+    
+}

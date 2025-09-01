@@ -1,1 +1,37 @@
+# Rust build artifacts
 /target
+*/target
+*.exe
+*.o
+*.rcgu.o
+*.d
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+Untitled-*.txt
+
+# Lock files (keep Cargo.lock for applications)
+# Uncomment the next line if this is a library
+# Cargo.lock
+
+# Node.js (if using any JS tools)
+node_modules/
+package-lock.json
+*.log
