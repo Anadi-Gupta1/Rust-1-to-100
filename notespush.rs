@@ -306,6 +306,9 @@ fn main() {
     println!("✅ Laptop is working and ready for advanced Rust!");
     println!("📅 Today's date: September 2, 2025");
     println!("🎯 Learning Rust with comprehensive examples!");
+    println!("👤 Author: Anadi Gupta");
+    println!("📧 Contact: anadigupta5555@gmail.com");
+    println!();
     
     // Run all demonstrations
     demonstrate_iterators();
