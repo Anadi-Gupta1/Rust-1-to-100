@@ -209,6 +209,32 @@ git add . ; git commit -m "Update: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" ; 
 
 ---
 
+## 📚 Study Notes & Resources
+
+### 📖 **Official Study Materials**
+
+<div align="center">
+
+[![Rust Part 1](https://img.shields.io/badge/📖_Study_Notes-Rust_Part_1-orange?style=for-the-badge&logo=rust)](./rust-part-1.pdf)
+[![Rust Part 2](https://img.shields.io/badge/📖_Study_Notes-Rust_Part_2-orange?style=for-the-badge&logo=rust)](./rust-part-2.pdf)
+
+**📑 Click the badges above to open the PDF study notes!**
+
+</div>
+
+| Resource | Description | Topics Covered |
+|----------|-------------|---------------|
+| 📖 **[Rust Part 1](./rust-part-1.pdf)** | Fundamentals and Core Concepts | Variables, Data Types, Functions, Control Flow |
+| 📖 **[Rust Part 2](./rust-part-2.pdf)** | Advanced Features & Memory Management | Ownership, Borrowing, Lifetimes, Advanced Patterns |
+
+### 📝 **How to Use Study Notes**
+1. **Download** the PDFs by clicking the links above
+2. **Study** alongside the practical code examples
+3. **Practice** concepts using the repository files
+4. **Reference** back to notes while coding
+
+---
+
 ## 🤝 Contributing
 
 Want to contribute to this learning journey? Here's how:
@@ -238,6 +264,7 @@ Want to contribute to this learning journey? Here's how:
 ![GitHub watchers](https://img.shields.io/github/watchers/Anadi-Gupta1/Rust-1-to-100?style=social)
 
 **📈 Learning Progress:** 20+ Rust concepts covered and growing!
+**📚 Study Materials:** 2 comprehensive PDF guides included!
 
 </div>
 

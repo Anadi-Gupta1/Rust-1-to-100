@@ -43,9 +43,10 @@ println!("Age: {}", age);
 println!("Admin: {}", is_admin);*/
 
 fn main() {
-   let age = 25;
-   println!("age is {}", age);
+   // let age = 25;
+   // println!("age is {}", age);
 
-    let myGrade: char = 'B';
-    println!("{}", myGrade);
+
+    let my_grade: char = 'B';
+    println!("{}", my_grade);
 }

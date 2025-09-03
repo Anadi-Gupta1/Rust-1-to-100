@@ -20,7 +20,7 @@ path = "src/main3.rs"
 
 [[bin]]
 name = "datatypespractice" 
-path = "src/datatypespractice.rs"
+path = "src/bin/datatypespractice.rs"
 
 [[bin]]
 name = "rustconstant"
