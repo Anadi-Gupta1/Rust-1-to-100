@@ -40,7 +40,7 @@ fn move_player(dir: Direction) {
 
 fn main() {
     let dir = Direction::North;
-    move_player(dir);
+    move_player(dir); 
 }
 
 
@@ -75,8 +75,6 @@ enum Shape {
     Square(f64)
 }
 
-
-}
 fn calculate_area(shape: Shape) -> f64 {
     match shape {
         Shape::Circle(radius) => 3.14*radius*radius,
