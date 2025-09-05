@@ -74,4 +74,3 @@ Advanced Level:
 In large-scale applications or systems like APIs or games, using traits and structs allows you to abstract complex behavior. For example, in a complex financial system, you might have different account types (savings, checking, loan). Each account type could have different ways of calculating interest, but you can define a common trait InterestBearing and implement the method for each account type. This reduces duplication and makes your code easier to scale.
 Conclusion:
 Mastering these basic Rust concepts can help you build cleaner, more efficient programs. Whether you’re creating simple applications or complex systems, understanding how to use structs and traits is crucial for structuring your code logically. As you progress, these concepts will become the foundation for more advanced software engineering practices.
-
