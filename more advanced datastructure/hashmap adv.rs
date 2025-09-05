@@ -1,3 +1,13 @@
+what do you mean by hashmap adv.rs?
+HashMap is a data structure in Rust that allows you to store key-value pairs. The "adv" in "hashmap adv.rs" likely refers to advanced usage or features of HashMap in Rust.
+key
+
+there are several various ways which we can mesh HashMap with other data structures in Rust. For example, we can use HashMap in conjunction with vectors, structs, and enums to create more complex and powerful data models.
+1. insert
+get 
+remove 
+clear'
+
 Rust HashMap
 HashMap
 A HashMap is a collection of key/value pairs.
@@ -149,4 +159,5 @@ fn main() {
     }
 
 }
+
 
