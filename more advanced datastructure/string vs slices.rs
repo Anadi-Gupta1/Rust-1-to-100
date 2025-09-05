@@ -104,3 +104,23 @@ fn first_word(str: &String) -> &str {
 for borrowing of the original value we use &
 here we are using &str because we are returning the slice of the original string
 this is the concept of the borrowing
+
+
+fn main() {
+    let name = String::from("hello world");
+    // ans = &name[0..index], ans is an immutable reference to name
+    let mut space_index = 0;
+    for i in name.chars() {
+        if i == ' ' {
+            break;
+        }
+        space_index = space_index + 1;
+    }
+    let ans = &name[0..space_index];
+    println!("ans is {}", ans);
+}
+
+
+
+this is the real production level code which is used in the industry right now
+
