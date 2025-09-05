@@ -64,3 +64,43 @@ fn main(){
 }
 
 Output the first word is M'21
+\
+fn main() {
+    let mut name = String::from("hello world");
+    // ans = &name[0..index], ans is an immutable reference to name
+    let ans = first_word(str: &name);
+    println!("ans is {}", ans);
+}
+
+fn first_word(str: &String) -> &str {
+    let mut space_index = 0;
+    for i in str.chars() {
+        if i == ' ' {
+            break;
+        }
+        space_index = space_index + 1;
+    }
+    return &str[0..space_index];
+}
+
+for borrowing of the original value we use &
+here we are using &str because we are returning the slice of the original string
+fn main() {
+    let mut name = String::from("hello world");
+    // ans = &name[0..index], ans is an immutable reference to name
+    let ans = first_word(&name);
+    println!("ans is {}", ans);
+}
+fn first_word(str: &String) -> &str {
+    let mut space_index = 0;
+    for i in str.chars() {
+        if i == ' ' {
+            break;
+        }
+        space_index = space_index + 1;
+    }
+    return &str[0..space_index];
+}
+for borrowing of the original value we use &
+here we are using &str because we are returning the slice of the original string
+this is the concept of the borrowing
